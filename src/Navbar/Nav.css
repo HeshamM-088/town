@@ -1,0 +1,71 @@
+.nav-section{
+    background-image: url(../Images/the-town-bg-01.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: cursive;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: royalblue;
+}
+
+.nav-item{
+    padding: 0 5px;
+    transition: 0.3s;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: royalblue;
+}
+
+.nav-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    min-width: 80%;
+}
+
+.nav-text h1{
+    font-size: 50px;
+}
+
+.nav-text p span{
+    color:royalblue ;
+    font-weight: bold;
+}
+
+@media (max-width: 992px){
+    .navbar-nav{
+        text-align: right;
+    }
+
+    .nav-item:hover{
+        padding: 0 20px;
+    }
+}

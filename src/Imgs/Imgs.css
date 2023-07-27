@@ -1,0 +1,41 @@
+.imgs-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imgs-section .imgs-text{
+     text-align: center;
+    margin-bottom: 50px;
+}
+
+.imgs-section .imgs-text h1{
+    color: royalblue;
+}
+
+.imgs-section .imgs-text p{
+    text-align: center;
+    color: #666;
+} 
+
+.imgs-section .imgs-img{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imgs-section .imgs-img img{
+    width: 200px;
+    height: 225px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.imgs-section .imgs-img img:hover{
+    transform: scale(1.1);
+}

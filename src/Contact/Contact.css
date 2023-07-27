@@ -1,0 +1,134 @@
+.footer-section{
+    padding-top: 30px;
+    background-image: url(../Images/the-town-bg-02.jpg);
+    background-position-y: 45%;
+    background-position-x: 100%;
+    padding-bottom: 6px;
+}
+
+.contact-top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+.contact-top h1{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.contact-top span{
+    background-color: white;
+    height: 1px;
+    position: relative;
+    width: 100%;
+}
+
+.contact-top span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 8px;
+    background-color: white;
+}
+
+.contact-top p{
+    color: white;
+    line-height: 2.5;
+    margin-top: 35px;
+}
+
+.contact-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+
+.contact-middle .location{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-basis: 35%;
+}
+
+.contact-middle .location > p{
+    padding-bottom: 70px;
+}
+
+.contact-middle .mail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 35%;
+}
+
+.contact-middle .mail p{
+    padding-bottom: 70px;
+}
+
+.contact-middle .mail .mail-subscribe{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-middle .mail .mail-subscribe input{
+    margin: 0 20px 0 0;
+    padding: 6px 20px;
+    outline: none;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+}
+.contact-middle .mail .mail-subscribe input::placeholder{
+    color: white;
+}
+
+.contact-middle .mail .mail-subscribe button{
+    font-weight: bold;
+    color: royalblue;
+    text-transform: uppercase;
+}
+
+.contact-bottom p{
+    text-align: center;
+    color: white;
+    
+    font-size: 18px; 
+}
+
+.contact-bottom p span{
+    color: royalblue;
+    font-weight: bold;
+}
+
+@media (max-width: 992px){
+    .contact-top{
+        align-items: center;
+    }
+    .contact-top p{
+        text-align: center;
+    }
+    .contact-middle{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-bottom p{
+        font-size: 12px;
+    }
+    .contact-top span::after{
+        left: 25%;
+        width: 50%;
+    }
+    .contact-middle .mail{
+        align-items: center;
+    }
+}
